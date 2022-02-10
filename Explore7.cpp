@@ -13,6 +13,7 @@ struct Line {
     Point end;
     Line(Point s, Point e);
 };
+// ad
 Point::Point() {
 	x = 0;
 	y = 0;
