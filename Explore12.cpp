@@ -11,6 +11,7 @@ struct Person {
 Person::Person() {
     for (int index = 0; index < MAX_NAME_LEN; index++) {
         firstName[index] = '\0';
+        lastName[index] = '\0';
         // Modify the constructor so that last name is properly initialized
     }
 }
@@ -30,7 +31,8 @@ int main() {
     cout << "Person b after constructor ";
     printPerson(b);
     cout << endl;
-
+    strcpy(b.firstName, "James");
+    strcpy(b.lastName, "Moriarity");
     strcpy(a.firstName, "Sherlock");
     strcpy(a.lastName, "Holmes");
 
